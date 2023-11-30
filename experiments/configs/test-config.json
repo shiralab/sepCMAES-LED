@@ -1,0 +1,38 @@
+{
+    "n_runs": 1,
+    "n_workers": 0,
+    "obj_name": [
+        "Sphere",
+        "Ellipsoid",
+        "SharpRidge",
+        "AttractiveSector",
+        "Rosenbrock",
+        "Ackley"
+    ],
+    "outdir": "SepCMAES_ProposeCSA",
+    "method": "SepCMAESLED",
+    "dim": [
+        64,
+        64,
+        64
+    ],
+    "eff_dim": [
+        8,
+        16,
+        32
+    ],
+    "lam": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "interval": 1,
+    "n_iters_coef": 1e5,
+    "beta_hat": 0.01,
+    "gain_power_min": -1,
+    "gain_power_max": 5,
+    "terminate_condition": 1e-8
+}
