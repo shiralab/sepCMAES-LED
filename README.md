@@ -8,7 +8,7 @@ This is implementation of sep-CMA-ES-LED [[DOI](https://ieeexplore.ieee.org/docu
 ## Run Experiments
 ```
 cd experiments
-python multirun.py configs/[config file name]
+pipenv run python multirun.py configs/[config file name]
 ```
 - The result is saved in `experiments/storage`
 - config file names (see `experiments/configs`)
@@ -52,12 +52,21 @@ python multirun.py configs/[config file name]
 - Error: the optimizer occurred some error
 
 ## Environment
-```
-Jinja2==3.1.1
-json5==0.9.6
-numpy==1.22.3
-pandas==1.4.1
-scipy==1.8.0
+Experiments run on Python 3.9+ and following requirements:
+- numpy==1.22.3
+- pandas==1.4.1
+- scipy==1.8.0
+- jinja2==3.1.1
+
+
+To set up the environment using pipenv, follow these commands:
+
+```shell
+pyenv install 3.9
+pyenv local 3.9
+pip install pipenv
+
+pipenv sync
 ```
 
 ## Reference

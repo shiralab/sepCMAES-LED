@@ -4,6 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+numpy = "==1.22.3"
+pandas = "==1.4.1"
+scipy = "==1.8.0"
+jinja2 = "==3.1.1"
 
 [dev-packages]
 
